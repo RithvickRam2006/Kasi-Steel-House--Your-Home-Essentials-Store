@@ -11,8 +11,8 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden w-full">
-      <div className="absolute inset-0 overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden w-full max-w-full min-w-0">
+      <div className="absolute inset-0 overflow-hidden w-full">
         <motion.div
           className="absolute inset-0 w-full h-full"
           style={{ scale: 1.1 }}
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <img
             src={HERO_IMAGE}
             alt="Storefront at golden hour"
-            className="block w-full h-full object-cover"
+            className="block w-full h-full min-w-full object-cover"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
@@ -40,7 +40,7 @@ export default function HeroSection() {
           Your Trusted Home Essentials Store
         </motion.p>
 
-        <motion.h2
+        <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
@@ -48,7 +48,7 @@ export default function HeroSection() {
           style={{ fontSize: "clamp(2.5rem, 8vw, 7rem)", letterSpacing: "-0.04em" }}
         >
           KASI STEEL<span className="text-primary"> HOUSE</span>
-        </motion.h2>
+        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 20 }}

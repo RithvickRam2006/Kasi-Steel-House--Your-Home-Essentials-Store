@@ -39,6 +39,9 @@ export default function AboutSection() {
             >
               Our Story
             </p>
+            <p className="text-foreground/90 mb-6">
+              Welcome to Kasi Steel House, your trusted destination for quality kitchen utensils, home essentials, stationery, toys, plastic products, and daily utility items.
+            </p>
             <h2
               className="font-heading font-bold text-3xl md:text-5xl text-foreground mb-6 leading-tight"
               style={{ letterSpacing: "-0.04em" }}

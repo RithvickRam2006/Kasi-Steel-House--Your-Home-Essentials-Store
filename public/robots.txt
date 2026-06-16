@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kasi-steel-house-your-home-essentia.vercel.app/sitemap.xml
