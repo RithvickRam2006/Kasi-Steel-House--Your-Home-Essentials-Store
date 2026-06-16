@@ -29,8 +29,8 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-background">
-      <div ref={ref} className="max-w-7xl mx-auto px-6">
+    <section id="contact" className="py-24 md:py-32 bg-background w-full overflow-hidden">
+      <div ref={ref} className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-16">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
