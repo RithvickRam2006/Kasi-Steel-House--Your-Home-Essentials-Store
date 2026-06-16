@@ -9,14 +9,14 @@ export default function AboutSection() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" className="py-24 md:py-32 bg-background">
-      <div ref={ref} className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+    <section id="about" className="py-24 md:py-32 bg-background w-full overflow-hidden">
+      <div ref={ref} className="w-full max-w-full mx-auto px-4 sm:px-6 overflow-hidden min-w-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-start justify-items-center md:justify-items-stretch text-center md:text-left min-w-0">
           <motion.div
-            initial={{ opacity: 0, x: -60 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="relative overflow-hidden rounded-2xl"
+            className="relative overflow-hidden rounded-2xl w-full max-w-full md:max-w-[560px] mx-auto min-w-0"
           >
             <motion.img
               src={ABOUT_IMAGE}
