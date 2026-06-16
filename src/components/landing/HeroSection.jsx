@@ -11,10 +11,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
+    <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden w-full">
+      <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute inset-0"
+          className="absolute inset-0 w-full h-full"
           style={{ scale: 1.1 }}
           initial={{ scale: 1.15 }}
           animate={{ scale: 1.05 }}
@@ -23,7 +23,7 @@ export default function HeroSection() {
           <img
             src={HERO_IMAGE}
             alt="Storefront at golden hour"
-            className="w-full h-full object-cover"
+            className="block w-full h-full object-cover"
           />
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/70" />
